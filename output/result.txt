@@ -1,0 +1,60 @@
+  Month Region  Sales  Advertising_Spend  Profit
+0   Jan  North  50000               4000   10000
+1   Feb  South  45000               3500    8000
+2   Mar   East  60000               5000   12000
+3   Apr   West  30000               2000    4000
+4   May  North  70000               6000   15000
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 12 entries, 0 to 11
+Data columns (total 5 columns):
+ #   Column             Non-Null Count  Dtype
+---  ------             --------------  -----
+ 0   Month              12 non-null     object
+ 1   Region             12 non-null     object
+ 2   Sales              12 non-null     int64
+ 3   Advertising_Spend  12 non-null     int64
+ 4   Profit             12 non-null     int64
+dtypes: int64(3), object(2)
+memory usage: 612.0+ bytes
+None
+              Sales  Advertising_Spend        Profit
+count     12.000000          12.000000     12.000000
+mean   59583.333333        4816.666667  12083.333333
+std    14736.832849        1573.550319   3987.670392
+min    30000.000000        2000.000000   4000.000000
+25%    49500.000000        3500.000000   9750.000000
+50%    62500.000000        5250.000000  13000.000000
+75%    70500.000000        6000.000000  15000.000000
+max    80000.000000        7000.000000  18000.000000
+
+Total Sales: 715000
+Average Sales: 59583.333333333336
+Region
+East     58666.666667
+North    65000.000000
+South    60666.666667
+West     54000.000000
+Name: Sales, dtype: float64
+
+Correlation Matrix:
+                      Sales  Advertising_Spend    Profit
+Sales              1.000000           0.983937  0.996898
+Advertising_Spend  0.983937           1.000000  0.982043
+Profit             0.996898           0.982043  1.000000
+Profit             0.996898           0.982043  1.000000
+
+Low Profit Months:
+  Month Region  Sales  Advertising_Spend  Profit
+0   Jan  North  50000               4000   10000
+1   Feb  South  45000               3500    8000
+2   Mar   East  60000               5000   12000
+3   Apr   West  30000               2000    4000
+6   Jul   East  48000               3000    9000
+7   Aug   West  52000               3500   10000
+
+R2 Score: 0.9712975534317692
+C:\Users\khila\anaconda3\khilan\Lib\site-packages\sklearn\utils\validation.py:2749: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
+  warnings.warn(
+Predicted Sales for ₹6000 Advertising: [70472.22222222]
+
+Recommendation: Increase Advertising Budget
