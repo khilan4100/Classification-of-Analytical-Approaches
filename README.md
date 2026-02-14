@@ -45,3 +45,15 @@ To implement:
 - Correlation Heatmap
 - Predicted Sales
 - Business Recommendation
+
+
+## Output Screenshots
+
+### Monthly Sales Graph
+![Monthly Sales](output/monthly_sales.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](output/correlation_heatmap.png)
+
+### Console Output
+See results.txt inside output folder.
